@@ -1,0 +1,177 @@
+@font-face {
+	font-family:cdreams;
+	src: url(font/CaviarDreams.ttf)
+		
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background: #121212;
+  
+ 
+   
+}
+nav{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    background: linear-gradient(#000,#212121);
+    left: 0;
+    width: 90px;
+    overflow: hidden;
+    transition: width 0.5s ease;
+    box-shadow: 0 20px 35px rgba(0,0,0,0,1);
+    border-right:3px solid #ff7200;
+    z-index: 1;
+}
+.logo{
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease;
+    margin: 10px 0 0 -15px;
+}
+.logo img{
+
+    height: 50px;
+    border-radius: 50%;
+}
+.logo span{
+    margin: 20px 0 0 0;
+    font-weight: bold;
+    padding-left: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+a{
+    position: relative;
+    color: #FFF;
+    font-size: 14px;
+    display: table;
+    width: 300px;
+    padding: 10px;
+    transition: all 0.5s ease;
+}
+.fas{
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top:14px;
+    font-size: 20px;
+    text-align: center;
+}
+.nav-item{
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+}
+a:hover{
+    background: #ff7200;
+}
+nav:hover{
+    width: 280px;
+    transition: all 1s ease;
+}
+.logout{
+    position: absolute;
+    bottom: 0;
+}
+.spider{
+    width: 100%;
+    margin-top -100px;
+
+}
+#play{
+    display: block;
+    position: relative;
+    margin-left: 52%;
+    margin-top: -20%;
+    margin-right: 0%;
+    margin-bottom: 0%;
+    font-size: 100px;
+    color:#fff;
+    transition: opacity 0.5s;
+}
+.play2{
+    font-size: 30px;
+    font-family: 'cdreams';
+    display: block;
+    position: relative;
+    margin: -60px 0 0 110px;
+    
+}
+#play:hover{
+    opacity: 0.3;
+    cursor: pointer;
+    transition: opacity 1s;
+    
+}
+.allslide{
+    height: 450px;
+    margin:600px auto 0 00px;
+    position: relative;
+    width: 2555px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    
+}
+.slides{
+    display: flex;
+    width: calc(450px * 15);   
+    animation: scroll 40s linear infinite;
+}
+@keyframes scroll{
+    0%{
+        transform: translateZ(0);
+    }
+    100%{
+        transform: translateX(calc(-250px * 9));
+    }
+}
+.slide-image{
+    height: 450px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    perspective: 100px;
+}
+#img2{
+    width: 100%;
+    transition: transform 1s;
+}
+#img2:hover{
+    transform: translateZ(20px);
+}
+.text{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    height: 120px;
+    margin: 10px 0 0 20px;
+    font-family: bebas neue;
+    font-size: 30px;
+    color:#ccc;
+    text-align:center;
+    
+}
+p{
+    margin-left: 90px;
+    color: #ff7200;
+    font-family: bebas neue;
+    font-size: 30px;
+    text-align: right;
+}
+img{
+    width: 300px;
+    position: relative;
+}
